@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <h2>CHOOSE YOUR ROLL NUMBER</h2>
+        <input type="text" id="mail" placeholder="Mail" class = "input">
+        <p>
+            <font size = "8">CGPA</font>
+        </p>
+        <font size = '6'>
+            <table>
+                <tr>
+                    <td>
+                        <button onclick = "sendresult1()">20CSE001</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick = "sendresult2()">20CSE002</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick = "sendresult3()">20CSE003</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick = "sendresult4()">20CSE004</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick = "sendresult5()">20CSE005</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick = "sendresult6()">20CSE006</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick = "sendresult7()">20CSE007</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick = "sendresult8()">20CSE008</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick = "sendresult9()">20CSE009</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick = "sendresult10()">20CSE0010</button>
+                    </td>
+                </tr>
+            </table>
+        </font>
+        <p>
+            <font size = "8">FULL MARKSHEET</font>
+        </p>
+        <font size = '6'>
+            <table>
+                <tr>
+                    <td>
+                        <a href="20CSE001.html">20CSE001</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="20CSE002.html">20CSE002</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="20CSE003.html">20CSE003</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="20CSE004.html">20CSE004</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="20CSE005.html">20CSE005</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="20CSE006.html">20CSE006</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="20CSE007.html">20CSE007</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="20CSE008.html">20CSE008</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="20CSE009.html">20CSE009</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="20CSE010.html">20CSE010</a>
+                    </td>
+                </tr>
+            </table>
+        </font>
+    </center>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+<script>
+    function sendresult1() 
+        { 
+            var mail = $('#mail').val();
+            Email.send({
+                SecureToken : "811d2669-05f5-46a3-a25e-e6caef044b19",
+                To : mail,
+                From : "temp981234@gmail.com",
+                Subject : "RESPONSE FROM " + name,
+                Body : "Hello Aditya Chauhan<br>Your CGPA is 9.6"
+            }).then(
+            message =>{
+                console.log("|HELOOOO");
+                if(message == 'OK'){
+                    alert("result is send on your mail");
+            }
+            else{
+                alert("Sorry your response was not recorded :(")
+            }
+        }
+        );
+    }
+    function sendresult2() 
+        { 
+            var mail = $('#mail').val();
+            Email.send({
+                SecureToken : "811d2669-05f5-46a3-a25e-e6caef044b19",
+                To : mail,
+                From : "temp981234@gmail.com",
+                Subject : "RESPONSE FROM " + name,
+                Body : "Hello Aaryan Jha<br>Your CGPA is 9.14"
+            }).then(
+            message =>{
+                console.log("|HELOOOO");
+                if(message == 'OK'){
+                    alert("result is send on your mail");
+            }
+            else{
+                alert("Sorry your response was not recorded :(")
+            }
+        }
+        );
+    }
+    function sendresult3() 
+        { 
+            var mail = $('#mail').val();
+            Email.send({
+                SecureToken : "811d2669-05f5-46a3-a25e-e6caef044b19",
+                To : mail,
+                From : "temp981234@gmail.com",
+                Subject : "RESPONSE FROM " + name,
+                Body : "Hello Aditi Patel<br>Your CGPA is 8.5"
+            }).then(
+            message =>{
+                console.log("|HELOOOO");
+                if(message == 'OK'){
+                    alert("result is send on your mail");
+            }
+            else{
+                alert("Sorry your response was not recorded :(")
+            }
+        }
+        );
+    }
+    function sendresult4() 
+        { 
+            var mail = $('#mail').val();
+            Email.send({
+                SecureToken : "811d2669-05f5-46a3-a25e-e6caef044b19",
+                To : mail,
+                From : "temp981234@gmail.com",
+                Subject : "RESPONSE FROM " + name,
+                Body : "Hello Amaan Mansuri<br>Your CGPA is 9.07"
+            }).then(
+            message =>{
+                console.log("|HELOOOO");
+                if(message == 'OK'){
+                    alert("result is send on your mail");
+            }
+            else{
+                alert("Sorry your response was not recorded :(")
+            }
+        }
+        );
+    }
+    function sendresult5() 
+        { 
+            var mail = $('#mail').val();
+            Email.send({
+                SecureToken : "811d2669-05f5-46a3-a25e-e6caef044b19",
+                To : mail,
+                From : "temp981234@gmail.com",
+                Subject : "RESPONSE FROM " + name,
+                Body : "Hello Urvik Patel<br>Your CGPA is 8.42"
+            }).then(
+            message =>{
+                console.log("|HELOOOO");
+                if(message == 'OK'){
+                    alert("result is send on your mail");
+            }
+            else{
+                alert("Sorry your response was not recorded :(")
+            }
+        }
+        );
+    }
+    function sendresult6() 
+        { 
+            var mail = $('#mail').val();
+            Email.send({
+                SecureToken : "811d2669-05f5-46a3-a25e-e6caef044b19",
+                To : mail,
+                From : "temp981234@gmail.com",
+                Subject : "RESPONSE FROM " + name,
+                Body : "Hello Riddhi Jain<br>Your CGPA is 9.5"
+            }).then(
+            message =>{
+                console.log("|HELOOOO");
+                if(message == 'OK'){
+                    alert("result is send on your mail");
+            }
+            else{
+                alert("Sorry your response was not recorded :(")
+            }
+        }
+        );
+    }
+    function sendresult7() 
+        { 
+            var mail = $('#mail').val();
+            Email.send({
+                SecureToken : "811d2669-05f5-46a3-a25e-e6caef044b19",
+                To : mail,
+                From : "temp981234@gmail.com",
+                Subject : "RESPONSE FROM " + name,
+                Body : "Hello Jainam Patel<br>Your CGPA is 9.28"
+            }).then(
+            message =>{
+                console.log("|HELOOOO");
+                if(message == 'OK'){
+                    alert("result is send on your mail");
+            }
+            else{
+                alert("Sorry your response was not recorded :(")
+            }
+        }
+        );
+    }
+    function sendresult8() 
+        { 
+            var mail = $('#mail').val();
+            Email.send({
+                SecureToken : "811d2669-05f5-46a3-a25e-e6caef044b19",
+                To : mail,
+                From : "temp981234@gmail.com",
+                Subject : "RESPONSE FROM " + name,
+                Body : "Hello Malay Jiyani<br>Your CGPA is 9.14"
+            }).then(
+            message =>{
+                console.log("|HELOOOO");
+                if(message == 'OK'){
+                    alert("result is send on your mail");
+            }
+            else{
+                alert("Sorry your response was not recorded :(")
+            }
+        }
+        );
+    }
+    function sendresult9() 
+        { 
+            var mail = $('#mail').val();
+            Email.send({
+                SecureToken : "811d2669-05f5-46a3-a25e-e6caef044b19",
+                To : mail,
+                From : "temp981234@gmail.com",
+                Subject : "RESPONSE FROM " + name,
+                Body : "Hello Nirav Shah<br>Your CGPA is 9.14"
+            }).then(
+            message =>{
+                console.log("|HELOOOO");
+                if(message == 'OK'){
+                    alert("result is send on your mail");
+            }
+            else{
+                alert("Sorry your response was not recorded :(")
+            }
+        }
+        );
+    }
+    function sendresult10() 
+        { 
+            var mail = $('#mail').val();
+            Email.send({
+                SecureToken : "811d2669-05f5-46a3-a25e-e6caef044b19",
+                To : mail,
+                From : "temp981234@gmail.com",
+                Subject : "RESPONSE FROM " + name,
+                Body : "Hello Meet Shingala<br>Your CGPA is 8.93"
+            }).then(
+            message =>{
+                console.log("|HELOOOO");
+                if(message == 'OK'){
+                    alert("result is send on your mail");
+            }
+            else{
+                alert("Sorry your response was not recorded :(")
+            }
+        }
+        );
+    }
+</script>
+</html>

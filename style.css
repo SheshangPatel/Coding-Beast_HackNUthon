@@ -1,0 +1,16 @@
+*{
+    background-color: black;
+    color : white;
+    margin-top: 2mm;
+    margin-left: 7mmm;
+    font-size: 20;
+}
+#table{
+    align-items: center;
+    margin: 10mm;
+}
+.input{
+    background-color: cyan;
+    color: black;
+    font-size: 5;
+}
